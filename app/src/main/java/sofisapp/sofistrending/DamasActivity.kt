@@ -26,8 +26,6 @@ class DamasActivity:AppCompatActivity() {
 
 
 
-
-
         lista = findViewById(R.id.rvLista)
         lista?.setHasFixedSize(true)
 
