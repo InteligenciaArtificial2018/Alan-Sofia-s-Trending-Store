@@ -24,7 +24,7 @@ class MenuActivity:AppCompatActivity() {
         }
 
         btnCaballeros.setOnClickListener {
-            val intent = Intent(this, CaballerosActivity::class.java)
+            val intent = Intent(this, Caballeros::class.java)
             startActivity(intent)
             Toast.makeText(this, "Caballeros", Toast.LENGTH_SHORT).show()
         }

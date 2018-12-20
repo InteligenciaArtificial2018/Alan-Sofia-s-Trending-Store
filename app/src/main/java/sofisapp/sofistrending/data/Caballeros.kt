@@ -4,8 +4,8 @@ import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
 
-@Entity(tableName = "carrito")
-class Carrito(
+@Entity(tableName = "caballeros")
+class Caballeros(
     @ColumnInfo(name = "nombre") var nombre: String = "",
     @ColumnInfo(name = "precio")   var precio: Double = 0.0)
 {

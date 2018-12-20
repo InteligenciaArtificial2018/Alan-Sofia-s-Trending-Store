@@ -36,7 +36,6 @@ class CarritoAdapter(var listaCarrito: List<Carrito>? = ArrayList<Carrito>()): R
     class ViewHolder(val vista: View, val listaCarrito: List<Carrito>): RecyclerView.ViewHolder(vista) {
         fun onBindViews(position: Int) {
             vista.findViewById<TextView>(R.id.tvNombre).text = listaCarrito.get(position).nombre
-            vista.findViewById<TextView>(R.id.tvCantidad).text = listaCarrito.get(position).cantidad.toString()
             vista.findViewById<TextView>(R.id.tvPrecio).text = listaCarrito.get(position).precio.toString()
         }
     }

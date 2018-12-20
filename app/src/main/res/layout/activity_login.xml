@@ -16,7 +16,7 @@
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginTop="32dp" app:layout_constraintTop_toTopOf="parent" android:layout_marginLeft="32dp"
             android:layout_marginStart="32dp" android:layout_marginEnd="32dp" android:layout_marginRight="32dp"
-            android:hint="Correo "
+            android:hint="Nombre"
             android:background="@drawable/estilo_cajas_de_texto"
             android:paddingLeft="25dp"
             android:drawablePadding="10dp"/>
@@ -26,7 +26,7 @@
             android:inputType="textPassword"
             android:ems="10"
             android:id="@+id/txtPassword_login"
-            android:hint="Contraseña" android:paddingLeft="25dp" android:drawablePadding="10dp"
+            android:hint="Pin" android:paddingLeft="25dp" android:drawablePadding="10dp"
             android:background="@drawable/estilo_cajas_de_texto"
             android:layout_marginTop="16dp"
             app:layout_constraintTop_toBottomOf="@+id/txtCorreo_login"
@@ -36,7 +36,7 @@
             android:nextFocusForward="@+id/txtCorreo_login"
             app:layout_constraintHorizontal_bias="0.0"/>
     <Button
-            android:text="Iniciar Sesión"
+            android:text="Comprar"
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:id="@+id/btnIniciar_login" android:layout_marginTop="16dp"

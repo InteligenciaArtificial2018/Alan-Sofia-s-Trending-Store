@@ -14,25 +14,19 @@ import sofisapp.sofistrending.data.SofiasTrendingDatabase
 import sofisapp.sofistrending.data.Carrito
 
 
-class DetallesBoyOneCarritoActivity : AppCompatActivity(), CarritoAdapter.OnItemCarritoClickListener {
+abstract class Agregarcarrito : AppCompatActivity(), CarritoAdapter.OnItemCarritoClickListener {
     private var carritoDatabase: SofiasTrendingDatabase? = null
     private var carritoAdapter: CarritoAdapter? = null
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_detalles_boy_one_carrito)
+        setContentView(R.layout.template_item_carrito)
 
 
         carritoDatabase = SofiasTrendingDatabase.getInstance(this)
         carritoAdapter = CarritoAdapter(carritoDatabase?.getCarritoDao()?.getListCarrito())
         carritoAdapter?.setItemCarritoClickListener(this)
-
-        // Llamar la activity de agregar tarea mediante el floating action button
-        btnComprar.setOnClickListener {
-            startActivity(Intent(this, AgregarItemCarrito::class.java))
-        }
-
 
     }
 
@@ -42,14 +36,6 @@ class DetallesBoyOneCarritoActivity : AppCompatActivity(), CarritoAdapter.OnItem
         RvCarrito.adapter = carritoAdapter
         RvCarrito.layoutManager = LinearLayoutManager(this)
         RvCarrito.hasFixedSize()
-    }
-
-    override fun onItemCarritoClickListener(carrito: Carrito) {
-        val intent = Intent(this, AgregarItemCarrito::class.java)
-        intent.putExtra("nombre", carrito.nombre)
-        intent.putExtra("cantidad", carrito.cantidad)
-        intent.putExtra("precio", carrito.precio)
-        startActivity(intent)
     }
 
     override fun onItemCarritoLongClickListener(carrito: Carrito) {
@@ -64,14 +50,6 @@ class DetallesBoyOneCarritoActivity : AppCompatActivity(), CarritoAdapter.OnItem
 
         // Los dialogos pueden tener hasta 3 botones, uno positivo (SI), uno negativo (NO)
         // y un boton neutro (CANCEL) los cuales utilizaremos para Modificar, Eliminar y Cancelar
-        builder.setPositiveButton(R.string.modificar) {dialog, wich ->
-            // Realizar el llamado a la activity de agregar enviando los valores mediante el intent
-            val intent = Intent(this, AgregarItemCarrito::class.java)
-            intent.putExtra("nombre", carrito.nombre)
-            intent.putExtra("cantidad", carrito.cantidad)
-            intent.putExtra("precio", carrito.precio)
-            startActivity(intent)
-        }
 
         builder.setNegativeButton(R.string.eliminar) {dialog, which ->
             carritoDatabase?.getCarritoDao()?.deleteCarrito(carrito)

@@ -9,10 +9,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/tvNombre" android:layout_weight="1"/>
     <TextView
-            android:text="Cantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/tvCantidad" android:layout_weight="1"/>
-    <TextView
             android:text="Precio"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content" android:id="@+id/tvPrecio" android:layout_weight="1"/>

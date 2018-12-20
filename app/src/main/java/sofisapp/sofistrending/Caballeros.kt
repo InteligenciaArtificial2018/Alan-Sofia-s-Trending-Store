@@ -1,26 +1,19 @@
 package sofisapp.sofistrending
 
 import android.content.Intent
-import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import android.support.v7.widget.LinearLayoutManager
-import android.support.v7.widget.RecyclerView
-import android.util.Log
-import android.view.View
+import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
-import android.widget.Toast
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
 
-class DamasActivity:AppCompatActivity() {
-    var lista: RecyclerView? = null
-    var layoutManager: RecyclerView.LayoutManager? = null
+class Caballeros : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_damas)
+        setContentView(R.layout.activity_caballeros)
 
         val bdd = FirebaseStorage.getInstance()
 
@@ -40,17 +33,17 @@ class DamasActivity:AppCompatActivity() {
         val b4 = findViewById<Button>(R.id.btnCarrito4)
         val b5 = findViewById<Button>(R.id.btnCarrito5)
 
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas1.jpg?alt=media&token=63f4d0a7-5dcb-46c4-9355-a5c18941fccd").into(im1)
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas2.jpg?alt=media&token=9a374edc-ed38-4c2d-b858-7b0b01f13cc3").into(im2)
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas3.jpg?alt=media&token=d89a1cb5-6ccf-42f1-bbd9-ab0991acb647").into(im3)
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas4.jpg?alt=media&token=5d8383bc-4cda-43d6-9c93-4f31ba7c8a9c").into(im4)
-        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas5.jpg?alt=media&token=9aece05d-a181-4956-aece-d00c32237d2a").into(im5)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros1.jpg?alt=media&token=ab099489-3c28-4951-9437-d536e979f036").into(im1)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros2.jpg?alt=media&token=62286a9b-30df-494b-ad68-e1e568e7c930").into(im2)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros3.jpg?alt=media&token=53457497-be91-4ce9-9ab7-882f94da3541").into(im3)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros4.jpg?alt=media&token=8db513f1-63f0-4aa7-b3dd-dac2011e573b").into(im4)
+        Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros5.jpg?alt=media&token=197788a2-49bf-42ec-91dd-5555e110f099").into(im5)
 
-        t1.setText("Dolce & Gabanna")
-        t2.setText("Gucci")
-        t3.setText("Praga")
-        t4.setText("Morgan")
-        t5.setText("Kardashian's")
+        t1.setText("Tommy")
+        t2.setText("Colummbia")
+        t3.setText("Calvin Klein")
+        t4.setText("Polo")
+        t5.setText("Pull & Bear")
 
         b1.setOnClickListener {
             val intent = Intent(this, Agregarcarrito::class.java)
@@ -74,3 +67,5 @@ class DamasActivity:AppCompatActivity() {
         }
     }
 }
+
+

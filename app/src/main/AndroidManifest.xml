@@ -21,42 +21,11 @@ android:installLocation="preferExternal">
         <activity android:name=".MenuActivity"/>
         <activity android:name=".BoysActivity"/>
         <activity android:name=".DamasActivity"/>
-        <activity android:name=".CaballerosActivity"/>
-        <activity android:name=".detalles.DetallesBoy1Activity">
-        </activity>
         <activity android:name=".LoginActivity">
         </activity>
-        <activity android:name=".ActivityDetallesBoy1">
+        <activity android:name=".Agregarcarrito">
         </activity>
-        <activity android:name=".CarritoActivity">
-        </activity>
-        <activity android:name=".AgregarItemCarrito">
-        </activity>
-        <activity android:name=".DetallesBoyOneActivity">
-        </activity>
-        <activity android:name=".DetallesBoyOneCarritoActivity">
-        </activity>
-        <activity android:name=".Boy2Activity">
-        </activity>
-        <activity android:name=".Boy3Activity">
-        </activity>
-        <activity android:name=".Boy4Activity">
-        </activity>
-        <activity android:name=".Dama1Activity">
-        </activity>
-        <activity android:name=".Dama2Activity">
-        </activity>
-        <activity android:name=".Dama3Activity">
-        </activity>
-        <activity android:name=".Dama4Activity">
-        </activity>
-        <activity android:name=".Caballero1Activity">
-        </activity>
-        <activity android:name=".Caballero2Activity">
-        </activity>
-        <activity android:name=".Caballero3Activity">
-        </activity>
-        <activity android:name=".Caballero4Activity">
+        <activity android:name=".Caballeros">
         </activity>
     </application>
 
