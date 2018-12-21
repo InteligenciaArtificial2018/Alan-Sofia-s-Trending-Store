@@ -13,12 +13,10 @@ import com.squareup.picasso.Picasso
 import sofisapp.sofistrending.data.SofiasTrendingDatabase
 
 class Caballeros : AppCompatActivity() {
-
+    var Datos = mutableListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_caballeros)
-
-
         val bdd = FirebaseStorage.getInstance()
 
         val im1 = findViewById<ImageView>(R.id.imageview1)
@@ -43,34 +41,38 @@ class Caballeros : AppCompatActivity() {
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros4.jpg?alt=media&token=8db513f1-63f0-4aa7-b3dd-dac2011e573b").into(im4)
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/caballeros%2Fcaballeros5.jpg?alt=media&token=197788a2-49bf-42ec-91dd-5555e110f099").into(im5)
 
-        t1.setText("Tommy")
-        t2.setText("Colummbia")
-        t3.setText("Calvin Klein")
-        t4.setText("Polo")
-        t5.setText("Pull & Bear")
+        t1.setText("Tommy  1500.00 Lps.")
+        t2.setText("Colummbia  700.00 Lps.")
+        t3.setText("Calvin Klein  900.00 Lps.")
+        t4.setText("Polo  1100.00 Lps.")
+        t5.setText("Pull & Bear  1300.00 Lps.")
 
 
         b1.setOnClickListener {
             val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
+            Datos.add(t1.toString())
         }
         b2.setOnClickListener {
             val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
+            Datos.add(t2.toString())
         }
         b3.setOnClickListener {
             val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
+            Datos.add(t3.toString())
         }
         b4.setOnClickListener {
             val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
+            Datos.add(t4.toString())
         }
         b5.setOnClickListener {
             val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
+            Datos.add(t5.toString())
         }
-
     }
 }
 

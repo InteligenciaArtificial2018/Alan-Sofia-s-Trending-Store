@@ -16,9 +16,7 @@ import com.squareup.picasso.Picasso
 
 class BoysActivity:AppCompatActivity() {
 
-    var lista: RecyclerView? = null
-    var layoutManager: RecyclerView.LayoutManager? = null
-
+    var Datos = mutableListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_ninos)
@@ -47,35 +45,37 @@ class BoysActivity:AppCompatActivity() {
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/ni%C3%B1os%2Fboy4.jpg?alt=media&token=8e10539f-0013-44c0-9312-47fef5ed375a").into(im4)
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/ni%C3%B1os%2Fboy5.jpg?alt=media&token=95ff6168-6133-4999-aca9-c852fbc78091").into(im5)
 
-        t1.setText("Fisher Price")
-        t2.setText("Carter's")
-        t3.setText("Bebe Crece")
-        t4.setText("Johnson Babies")
-        t5.setText("Bad Bunnies")
+        t1.setText("Fisher Price  1200.00 Lps")
+        t2.setText("Carter's  500.00 Lps")
+        t3.setText("Bebe Crece  900.00 Lps")
+        t4.setText("Johnson Babies 700.00 Lps")
+        t5.setText("Bad Bunnies  650.00.00 lPS")
 
-
-        /*
         b1.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, Carritoboy::class.java)
             startActivity(intent)
+            Datos.add(t1.toString())
         }
         b2.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, Carritoboy::class.java)
             startActivity(intent)
+            Datos.add(t2.toString())
         }
         b3.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, Carritoboy::class.java)
             startActivity(intent)
+            Datos.add(t3.toString())
         }
         b4.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, Carritoboy::class.java)
             startActivity(intent)
+            Datos.add(t4.toString())
         }
         b5.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, Carritoboy::class.java)
             startActivity(intent)
+            Datos.add(t5.toString())
         }
-        */
     }
 }
 

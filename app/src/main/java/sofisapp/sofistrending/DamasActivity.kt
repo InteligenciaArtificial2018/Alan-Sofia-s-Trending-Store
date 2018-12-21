@@ -15,9 +15,7 @@ import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
 
 class DamasActivity:AppCompatActivity() {
-    var lista: RecyclerView? = null
-    var layoutManager: RecyclerView.LayoutManager? = null
-
+    var Datos = mutableListOf<String>()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_damas)
@@ -46,33 +44,36 @@ class DamasActivity:AppCompatActivity() {
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas4.jpg?alt=media&token=5d8383bc-4cda-43d6-9c93-4f31ba7c8a9c").into(im4)
         Picasso.get().load("https://firebasestorage.googleapis.com/v0/b/sofistrending.appspot.com/o/damas%2Fdamas5.jpg?alt=media&token=9aece05d-a181-4956-aece-d00c32237d2a").into(im5)
 
-        t1.setText("Dolce & Gabanna")
-        t2.setText("Gucci")
-        t3.setText("Praga")
-        t4.setText("Morgan")
-        t5.setText("Kardashian's")
+        t1.setText("Dolce & Gabanna  450.00 Lps")
+        t2.setText("Gucci  890.00 Lps")
+        t3.setText("Praga  670.00 Lps")
+        t4.setText("Morgan  800.00 Lps")
+        t5.setText("Kardashian's  900.00 Lps")
 
-        /*
-       b1.setOnClickListener {
-           val intent = Intent(this, Agregarcarrito::class.java)
-           startActivity(intent)
-       }
-       b2.setOnClickListener {
-           val intent = Intent(this, Agregarcarrito::class.java)
-           startActivity(intent)
-       }
-       b3.setOnClickListener {
-           val intent = Intent(this, Agregarcarrito::class.java)
-           startActivity(intent)
-       }
-       b4.setOnClickListener {
-           val intent = Intent(this, Agregarcarrito::class.java)
-           startActivity(intent)
-       }
-       b5.setOnClickListener {
-           val intent = Intent(this, Agregarcarrito::class.java)
-           startActivity(intent)
-       }
-       */
+        b1.setOnClickListener {
+            val intent = Intent(this, DamasCarrito::class.java)
+            startActivity(intent)
+            Datos.add(t1.toString())
+        }
+        b2.setOnClickListener {
+            val intent = Intent(this, DamasCarrito::class.java)
+            startActivity(intent)
+            Datos.add(t2.toString())
+        }
+        b3.setOnClickListener {
+            val intent = Intent(this, DamasCarrito::class.java)
+            startActivity(intent)
+            Datos.add(t3.toString())
+        }
+        b4.setOnClickListener {
+            val intent = Intent(this, DamasCarrito::class.java)
+            startActivity(intent)
+            Datos.add(t4.toString())
+        }
+        b5.setOnClickListener {
+            val intent = Intent(this, DamasCarrito::class.java)
+            startActivity(intent)
+            Datos.add(t5.toString())
+        }
     }
 }
