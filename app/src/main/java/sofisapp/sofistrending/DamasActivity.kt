@@ -13,6 +13,9 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+/**
+ * Clase donde se cargan las imagenes desde la base y manda a llamar el templete del carrito.
+ */
 
 class DamasActivity:AppCompatActivity() {
     var Datos = mutableListOf<String>()

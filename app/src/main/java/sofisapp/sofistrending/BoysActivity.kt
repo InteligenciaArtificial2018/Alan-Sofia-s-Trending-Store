@@ -13,7 +13,9 @@ import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
-
+/**
+ * Clase donde se cargan las imagenes desde la base y manda a llamar el templete del carrito.
+ */
 class BoysActivity:AppCompatActivity() {
 
     var Datos = mutableListOf<String>()
@@ -49,7 +51,7 @@ class BoysActivity:AppCompatActivity() {
         t2.setText("Carter's  500.00 Lps")
         t3.setText("Bebe Crece  900.00 Lps")
         t4.setText("Johnson Babies 700.00 Lps")
-        t5.setText("Bad Bunnies  650.00.00 lPS")
+        t5.setText("Bad Bunnies  650.00 lPS")
 
         b1.setOnClickListener {
             val intent = Intent(this, Carritoboy::class.java)

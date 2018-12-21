@@ -38,9 +38,9 @@
                         android:layout_height="196dp" android:id="@+id/imageview1"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="img1"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="@string/img1"/>
                 <Button
-                        android:text="Carrito"
+                        android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
@@ -48,7 +48,7 @@
                         android:id="@+id/btnCarrito1"
                         android:textColor="@android:color/white" android:drawableLeft="@drawable/carrito"
                         tools:layout_editor_absoluteX="249dp" tools:layout_editor_absoluteY="407dp"
-                        android:paddingTop="30dp"/>
+                        android:paddingTop="30dp" android:drawableStart="@drawable/carrito"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
@@ -77,9 +77,10 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle2"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp"
+                        android:contentDescription="@string/img"/>
                 <Button
-                        android:text="Carrito"
+                        android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
@@ -87,7 +88,7 @@
                         android:id="@+id/btnCarrito2"
                         android:textColor="@android:color/white" android:drawableLeft="@drawable/carrito"
                         tools:layout_editor_absoluteX="249dp" tools:layout_editor_absoluteY="407dp"
-                        android:paddingTop="30dp"/>
+                        android:paddingTop="30dp" android:drawableStart="@drawable/carrito"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
@@ -114,9 +115,10 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle3"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp"
+                        android:contentDescription="@string/img"/>
                 <Button
-                        android:text="Carrito"
+                        android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
@@ -151,9 +153,10 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle4"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="TODO"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp"
+                        android:contentDescription="@string/img"/>
                 <Button
-                        android:text="Carrito"
+                        android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
@@ -161,7 +164,7 @@
                         android:id="@+id/btnCarrito4"
                         android:textColor="@android:color/white" android:drawableLeft="@drawable/carrito"
                         tools:layout_editor_absoluteX="249dp" tools:layout_editor_absoluteY="407dp"
-                        android:paddingTop="30dp"/>
+                        android:paddingTop="30dp" android:contentDescription="@string/img" android:drawableStart="@drawable/carrito"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
@@ -190,9 +193,9 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle5"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="TODO"/>
                 <Button
-                        android:text="Carrito"
+                        android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
                         android:layout_width="135dp"
                         android:layout_height="wrap_content"
@@ -200,7 +203,7 @@
                         android:id="@+id/btnCarrito5"
                         android:textColor="@android:color/white" android:drawableLeft="@drawable/carrito"
                         tools:layout_editor_absoluteX="249dp" tools:layout_editor_absoluteY="407dp"
-                        android:paddingTop="30dp"/>
+                        android:paddingTop="30dp" android:drawableStart="@drawable/carrito"/>
             </LinearLayout>
         </LinearLayout>
     </ScrollView>

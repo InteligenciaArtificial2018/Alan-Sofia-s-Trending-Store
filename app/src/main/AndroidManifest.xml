@@ -27,6 +27,10 @@ android:installLocation="preferExternal">
         </activity>
         <activity android:name=".Caballeros">
         </activity>
+        <activity android:name=".DamasCarrito">
+        </activity>
+        <activity android:name=".Carritoboy">
+        </activity>
     </application>
 
 </manifest>

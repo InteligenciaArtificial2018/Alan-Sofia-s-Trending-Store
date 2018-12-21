@@ -11,6 +11,9 @@ import android.widget.TextView
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
 import sofisapp.sofistrending.data.SofiasTrendingDatabase
+/**
+ * Clase caballero donde se cargan las imagenes desde la base y manda a llamar el templete del carrito.
+ */
 
 class Caballeros : AppCompatActivity() {
     var Datos = mutableListOf<String>()

@@ -9,6 +9,9 @@ import sofisapp.sofistrending.R
 import kotlinx.android.synthetic.main.activity_login.*
 import sofisapp.sofistrending.R.id.txtCorreo_login
 import sofisapp.sofistrending.R.id.txtPassword_login
+/**
+ * Clase login donde el usuario podra registrarse.
+ */
 
 class LoginActivity : AppCompatActivity() {
 

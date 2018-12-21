@@ -16,7 +16,7 @@
             android:layout_marginRight="8dp"
             app:layout_constraintVertical_bias="0.501">
         <TextView
-                android:text="Seleccione una opcion"
+                android:text="@string/seleccione_una_opcion"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvOpcion"
@@ -28,7 +28,7 @@
                 android:textColor="@color/colorAccent" android:textStyle="bold" app:fontFamily="cursive"
                 android:textSize="26sp"/>
         <Button
-                android:text="Niños"
+                android:text="@string/ni_os"
 
                 android:layout_width="301dp"
                 android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
                 android:background="@drawable/estilo_botones"
                 android:textStyle="bold" android:textColor="@android:color/white"/>
         <Button
-                android:text="Damas"
+                android:text="@string/damas"
                 android:layout_width="305dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnDamas" app:layout_constraintEnd_toEndOf="@+id/btnBoys"
@@ -47,7 +47,7 @@
                 android:background="@drawable/estilo_botones"
                 android:textColor="@android:color/white" android:textStyle="bold"/>
         <Button
-                android:text="Caballeros"
+                android:text="@string/caballeros"
                 android:layout_width="305dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnCaballeros" app:layout_constraintEnd_toEndOf="@+id/btnDamas"
@@ -56,7 +56,7 @@
                 android:background="@drawable/estilo_botones"
                 android:textColor="@android:color/white" android:textStyle="bold"/>
         <TextView
-                android:text="Volver a Inicio"
+                android:text="@string/volver_a_inicio"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/tvInicio" android:layout_marginTop="32dp"

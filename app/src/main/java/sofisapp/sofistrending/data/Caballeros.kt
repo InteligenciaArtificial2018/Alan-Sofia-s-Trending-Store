@@ -3,7 +3,9 @@ package sofisapp.sofistrending.data
 import android.arch.persistence.room.ColumnInfo
 import android.arch.persistence.room.Entity
 import android.arch.persistence.room.PrimaryKey
-
+/**
+ * Tabla caballeros.
+ */
 @Entity(tableName = "caballeros")
 class Caballeros(
     @ColumnInfo(name = "nombre") var nombre: String = "",

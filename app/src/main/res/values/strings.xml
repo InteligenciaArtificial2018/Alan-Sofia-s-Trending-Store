@@ -14,4 +14,22 @@
     <string name="cancelar">Cancelar</string>
     <string name="mensajeCancelarDialogoLongClick">No se han realizado cambios en las tareas</string>
     <string name="mensajetareaEliminada">Tarea eliminada satisfactoriamente</string>
+    <string name="img1">img1</string>
+    <string name="img">...</string>
+    <string name="carrito">CARRITO</string>
+    <string name="nombre">Nombre</string>
+    <string name="pin">Pin</string>
+    <string name="comprar">Comprar</string>
+    <string name="allan_and_sofia_s_store">Allan and Sofia\'s Store</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="seleccione_una_opcion">Seleccione una opcion</string>
+    <string name="ni_os">Niños</string>
+    <string name="damas">Damas</string>
+    <string name="caballeros">Caballeros</string>
+    <string name="volver_a_inicio">Volver a Inicio</string>
+    <string name="carrito2">Carrito</string>
+    <string name="carrito3">Carrito</string>
+    <string name="carrito33">Carrito</string>
+    <string name="carrito444">Carrito</string>
+    <string name="carrito666">Carrito</string>
 </resources>
