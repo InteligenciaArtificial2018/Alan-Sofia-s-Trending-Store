@@ -193,7 +193,8 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle5"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="TODO"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp"
+                        android:contentDescription="@string/img"/>
                 <Button
                         android:text="@string/carrito"
                         android:background="@drawable/estilo_botones"
