@@ -52,25 +52,27 @@ class DamasActivity:AppCompatActivity() {
         t4.setText("Morgan")
         t5.setText("Kardashian's")
 
-        b1.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
-            startActivity(intent)
-        }
-        b2.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
-            startActivity(intent)
-        }
-        b3.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
-            startActivity(intent)
-        }
-        b4.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
-            startActivity(intent)
-        }
-        b5.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
-            startActivity(intent)
-        }
+        /*
+       b1.setOnClickListener {
+           val intent = Intent(this, Agregarcarrito::class.java)
+           startActivity(intent)
+       }
+       b2.setOnClickListener {
+           val intent = Intent(this, Agregarcarrito::class.java)
+           startActivity(intent)
+       }
+       b3.setOnClickListener {
+           val intent = Intent(this, Agregarcarrito::class.java)
+           startActivity(intent)
+       }
+       b4.setOnClickListener {
+           val intent = Intent(this, Agregarcarrito::class.java)
+           startActivity(intent)
+       }
+       b5.setOnClickListener {
+           val intent = Intent(this, Agregarcarrito::class.java)
+           startActivity(intent)
+       }
+       */
     }
 }

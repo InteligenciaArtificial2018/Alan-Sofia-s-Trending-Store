@@ -3,17 +3,21 @@ package sofisapp.sofistrending
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.widget.LinearLayoutManager
+import android.support.v7.widget.RecyclerView
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import com.google.firebase.storage.FirebaseStorage
 import com.squareup.picasso.Picasso
+import sofisapp.sofistrending.data.SofiasTrendingDatabase
 
 class Caballeros : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_caballeros)
+
 
         val bdd = FirebaseStorage.getInstance()
 
@@ -45,26 +49,28 @@ class Caballeros : AppCompatActivity() {
         t4.setText("Polo")
         t5.setText("Pull & Bear")
 
+
         b1.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
         }
         b2.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
         }
         b3.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
         }
         b4.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
         }
         b5.setOnClickListener {
-            val intent = Intent(this, Agregarcarrito::class.java)
+            val intent = Intent(this, CarritoCaballeros::class.java)
             startActivity(intent)
         }
+
     }
 }
 

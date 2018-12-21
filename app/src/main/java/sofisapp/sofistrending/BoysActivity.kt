@@ -53,6 +53,8 @@ class BoysActivity:AppCompatActivity() {
         t4.setText("Johnson Babies")
         t5.setText("Bad Bunnies")
 
+
+        /*
         b1.setOnClickListener {
             val intent = Intent(this, Agregarcarrito::class.java)
             startActivity(intent)
@@ -73,6 +75,7 @@ class BoysActivity:AppCompatActivity() {
             val intent = Intent(this, Agregarcarrito::class.java)
             startActivity(intent)
         }
+        */
     }
 }
 

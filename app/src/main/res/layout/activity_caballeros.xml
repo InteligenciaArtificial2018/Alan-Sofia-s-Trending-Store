@@ -38,7 +38,7 @@
                         android:layout_height="196dp" android:id="@+id/imageview1"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="img1"/>
                 <Button
                         android:text="Carrito"
                         android:background="@drawable/estilo_botones"
@@ -124,7 +124,7 @@
                         android:id="@+id/btnCarrito3"
                         android:textColor="@android:color/white" android:drawableLeft="@drawable/carrito"
                         tools:layout_editor_absoluteX="249dp" tools:layout_editor_absoluteY="407dp"
-                        android:paddingTop="30dp"/>
+                        android:paddingTop="30dp" android:drawableStart="@drawable/carrito"/>
             </LinearLayout>
             <LinearLayout
                     android:orientation="vertical"
@@ -151,7 +151,7 @@
                         android:layout_height="196dp" android:id="@+id/imgDetalle4"
                         android:layout_weight="1" tools:layout_editor_absoluteX="161dp"
                         tools:layout_editor_absoluteY="158dp"
-                        android:paddingBottom="30dp" android:paddingTop="10dp"/>
+                        android:paddingBottom="30dp" android:paddingTop="10dp" android:contentDescription="TODO"/>
                 <Button
                         android:text="Carrito"
                         android:background="@drawable/estilo_botones"

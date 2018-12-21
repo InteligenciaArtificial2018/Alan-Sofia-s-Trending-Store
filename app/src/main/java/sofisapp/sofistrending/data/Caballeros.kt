@@ -7,7 +7,7 @@ import android.arch.persistence.room.PrimaryKey
 @Entity(tableName = "caballeros")
 class Caballeros(
     @ColumnInfo(name = "nombre") var nombre: String = "",
-    @ColumnInfo(name = "precio")   var precio: Double = 0.0)
+    @ColumnInfo(name = "precio") var precio: Double = 0.0)
 {
     @PrimaryKey(autoGenerate = true)   var id: Int = 0
 }

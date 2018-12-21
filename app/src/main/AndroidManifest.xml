@@ -23,7 +23,7 @@ android:installLocation="preferExternal">
         <activity android:name=".DamasActivity"/>
         <activity android:name=".LoginActivity">
         </activity>
-        <activity android:name=".Agregarcarrito">
+        <activity android:name=".CarritoCaballeros">
         </activity>
         <activity android:name=".Caballeros">
         </activity>

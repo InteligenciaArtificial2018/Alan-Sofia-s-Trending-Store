@@ -8,7 +8,7 @@ interface CaballerosDao {
      * Retorna todos las tuplas de Todo en orden ascendente.
      */
     @Query("SELECT * FROM caballeros ORDER BY id ASC")
-    fun getListCaballeros(): List<Caballeros>
+    fun getCaballerosList(): List<Caballeros>
 
     /**
      * Retorna una tupla desde la tabla todo
